@@ -25,9 +25,9 @@ const Navbar = ({ isHomePg }) => {
 
     return (
         <div className={`fixed top-0 z-[1] w-full ${background}`}>
-            <nav className='relative py-4 w-11/12 mx-auto max-w-screen-xl h-[100px]'>
+            <nav className='relative w-11/12 mx-auto max-w-screen-xl h-[60px]'>
                 <div className='flex flex-row justify-between items-center'>
-                    <Link href="/"><Image src={`${isHomePg && background === 'bg-transparent' ? '/Solverscave-logo.webp' : '/Solverscave-green-logo.webp' }`} alt="Solvers Cave Logo" width={180} height={73.05} /></Link>
+                    <Link href="/"><Image src={`${isHomePg && background === 'bg-transparent' ? '/Solverscave-logo.webp' : '/Solverscave-green-logo.webp' }`} alt="Solvers Cave Logo" width={150} height={73.05} /></Link>
                     <ul className={`hidden md:flex flex-row justify-center items-center ${isHomePg && background === 'bg-transparent' ? 'text-white' : '' } text-lg tracking-tighter font-[600]`}>
                         <li className='px-4 py-2'><Link href="/">Home</Link></li>
                         <li className='px-4 py-2'><Link href="/portfolio">Portfolio</Link></li>

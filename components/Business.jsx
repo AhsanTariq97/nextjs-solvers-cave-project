@@ -12,7 +12,7 @@ const Business = () => {
               <h1 className="text-2xl font-bold md:text-3xl lg:text-4xl">Create A Professional Custom Web Design That Boost Your Business Online!</h1>
               <p className="text-sm pb-4 md:text-base">We are a professional website design and development wordpress agency, we have a team of experienced developers and designers who are skilled in using WordPress to create custom websites.</p>
               <p className="text-sm md:text-base">We also have experience working with a variety of different industries and businesses. We are able to work with you to understand your unique requirements and create a website that is tailored to your specific needs.</p>
-              <div className="flex flex-row justify-evenly md:justify-start items-center space-x-12 w-full">
+              <div className="flex flex-col items-start justify-start space-y-4 md:flex-row md:space-x-12 md:space-y-0 w-full">
                   <Link href='/contact-us'><Button bgColor='#58ae57' text='Chat With Us' /></Link>
                   <a href="mailto:info@api.solverscave.com"><Button bgColor='#58ae57' text='Email Us' /></a>
               </div>

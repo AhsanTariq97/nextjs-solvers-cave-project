@@ -108,7 +108,7 @@ const Portfolio = ({ isPortfolioPg, heading, text }) => {
         <div className="bg-[#F2F2F2] py-16 w-full">
             <div className="flex flex-col justify-between items-center space-y-4 w-[95%] mx-auto max-w-screen-2xl">
                 <h1 className="text-2xl font-semibold text-center py-2 md:font-bold md:text-3xl lg:text-4xl">{heading}</h1>
-                <p className="text-xl text-center">{text}</p>
+                <p className="text-base md:text-lg text-center">{text}</p>
                 <div className="flex justify-center items-center flex-wrap space-x-4">
                     <ButtonPortfolio id='imgsAll' text='All' onClick={() => setBtnSelected('imgsAll')} btnSelected={btnSelected} />
                     <ButtonPortfolio id='imgsEcommerce' text='Ecommerce' onClick={() => setBtnSelected('imgsEcommerce')} btnSelected={btnSelected} />

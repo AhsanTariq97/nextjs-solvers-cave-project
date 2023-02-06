@@ -32,7 +32,7 @@ const Footer = () => {
                     <a href="https://www.linkedin.com/company/wearesolverscave/"><FaLinkedinIn size={24} className='hover:text-[#58ae57] text-black' /></a>
                     <a href="https://wa.me/03366607660"><FaWhatsapp size={24} className='hover:text-[#58ae57] text-black' /></a>
                 </div>
-                <Button bgColor='#58ae57' text='Email Us' pl='pl-4' icon={faPaperPlane} />
+                <a href="mailto:info@api.solverscave.com"><Button bgColor='#58ae57' text='Email Us' pl='pl-4' icon={faPaperPlane} /></a>
             </div>
         </div>
     </div>
