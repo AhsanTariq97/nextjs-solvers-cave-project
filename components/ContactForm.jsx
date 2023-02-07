@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Button from './Button'
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
-import submitFormData from './ClientData'
+import submitFormData from '@/pages/api/airtable'
 
 
 const ContactForm = ({width}) => {
@@ -44,7 +44,8 @@ const ContactForm = ({width}) => {
       message: message
     }
 
-    console.log(clientData)
+    console.log(process.env.AIRTABLE_API_KEY)
+    // console.log(clientData)
 
     submitFormData(clientData, submissionStatus, setSubmissionStatus);
 
