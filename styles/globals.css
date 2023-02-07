@@ -11,3 +11,9 @@ html {
 .custom-shadow {
   box-shadow: 0 0px 4px 3px rgba(0, 0, 0, 0.1), 0 10px 6px -3px #58ae57;
 }
+
+.input-phone-number input:focus{
+  outline: none !important;
+  border:none !important;
+  box-shadow: none !important;
+}

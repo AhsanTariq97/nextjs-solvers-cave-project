@@ -42,6 +42,7 @@ export default class SwipeToSlide extends Component {
       swipeToSlide: true,
       autoplay: true,
       speed: 1250,
+      arrows: false,
       autoplaySpeed: 1250,
     //   afterChange: function(index) {
     //     console.log(
