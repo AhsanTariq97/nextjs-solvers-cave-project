@@ -71,21 +71,21 @@ const ContactForm = ({width}) => {
   }, [submissionStatus, setSubmissionStatus]);
 
   return (
-    <div className={`flex flex-1 flex-col justify-between items-center space-y-4 w-full md:max-w-lg px-8 py-8 text-[#0f0c45] bg-[#E7E8E9]/80 md:${width}`}>
+    <div className={`flex flex-1 flex-col justify-between items-center space-y-4 w-full md:max-w-lg px-8 py-8 text-[#0f0c45] bg-[#E7E8E9]/90 md:${width}`}>
         <h1 className='text-2xl font-semibold text-center'>Let's Connect to help you and your Business.</h1>
-        <div className='flex flex-col justify-between items-center w-full space-y-4'>
+        <div className='flex flex-col justify-between items-center w-full space-y-6'>
             <div className='relative w-full'>
               <input className='px-4 py-2 w-full outline-none' type="text" placeholder='Name' value={name} onChange={(e) => setName(e.target.value)} required />
-              {name === '' ? <p className='absolute -bottom-4 text-xs text-red-600 w-full px-4'>{nameErr}</p> : <></>}
+              {name === '' ? <p className='absolute -bottom-[22px] text-base text-red-600 w-full px-4'>{nameErr}</p> : <></>}
             </div>
             <div className='relative w-full'>
               <input className='px-4 py-2 w-full outline-none' type="email" name='email' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} required/>
-              {emailError !== '' ? <p className='absolute -bottom-4 text-xs text-red-600 w-full px-4'>{emailError}</p> : <></>}
+              {emailError !== '' ? <p className='absolute -bottom-[22px] text-base text-red-600 w-full px-4'>{emailError}</p> : <></>}
             </div>
             <div className='relative w-full'>
               <div className='px-4 py-2 outline-none bg-white'>
-                <PhoneInput className='input-phone-number' defaultCountry="PK" placeholder='Phone Number' value={phone} onChange={setPhone} required/>
-                {phone === '' ? <p className='absolute -bottom-4 text-xs text-red-600 w-full px-4'>{phoneErr}</p> : <></>}
+                <PhoneInput className='input-phone-number' defaultCountry="US" placeholder='Phone Number' value={phone} onChange={setPhone} required/>
+                {phone === '' ? <p className='absolute -bottom-[22px] text-base text-red-600 w-full'>{phoneErr}</p> : <></>}
               </div>
             </div>
             <textarea className='px-4 py-2 w-full outline-none' type="text" rows={4} placeholder='What can we do for you?' value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
